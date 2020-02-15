@@ -18,8 +18,8 @@ public class MethodsHW {
 	public static void findMaxArray() {
 
 		System.out.println("Entre integer numbers separated by space:");
-		String[] MaxArr = sc.nextLine().split(" ");
-		System.out.println("Max value in array is:" + (findMax(MaxArr)));
+		String[] maxArr = sc.nextLine().split(" ");
+		System.out.println("Max value in array is:" + (findMax(maxArr)));
 		System.out.println();
 	}
 
