@@ -2,11 +2,11 @@ package com.iteagles.learnit.kuzminHW6;
 
 public class Candy {
 
-	protected String title;
-	protected double price;
-	protected int weight;
-	protected String type;
-	protected double sugar;
+	private String title;
+	private double price;
+	private int weight;
+	private String type;
+	private double sugar;
 
 	public Candy(String title, double price, int weight, String type, double sugar) {
 		this.title = title;
