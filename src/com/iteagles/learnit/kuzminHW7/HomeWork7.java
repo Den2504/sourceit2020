@@ -23,7 +23,7 @@ public class HomeWork7 {
 		String ext = sc.nextLine();
 		findFiles(dir, ext);
 		System.out.println("===============================================================================");
-		
+		System.out.println("===============================================================================");
 	}
 
 	public static void newFile() {
