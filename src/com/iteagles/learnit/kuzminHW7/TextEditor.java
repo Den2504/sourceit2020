@@ -75,7 +75,7 @@ public class TextEditor {
 			}
 			length += str[strings].length();
 
-			Files.write(path, str[strings].getBytes(), StandardOpenOption.APPEND); // добавляет текст в существующий файл
+			Files.write(path, str[strings].getBytes(), StandardOpenOption.APPEND); // добавляет текст в существующий файл.
 		}
 		System.out.println("\nHere is the text you entered: ");
 		try (Stream<String> fStream = Files.lines(path)) {
