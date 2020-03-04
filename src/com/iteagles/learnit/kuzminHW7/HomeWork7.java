@@ -32,7 +32,6 @@ public class HomeWork7 {
 		String ext2 = sc.nextLine();
 		int count = getNumberOfFiles(dir2, ext2);
 		System.out.println("Number of files with the extension you entered in directory " + dir2 + ": " + count);
-		System.out.println("===============================================================================");
 	}
 
 	public static void newFile() {
