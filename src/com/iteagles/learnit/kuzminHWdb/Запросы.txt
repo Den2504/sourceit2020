@@ -1,0 +1,25 @@
+UPDATE users SET first_name = 'Andreyy' WHERE user_id = 3; # запрос по изменению 
+SELECT * FROM users WHERE user_id = 3; # запрос по извлечение
+INSERT INTO users (first_name) VALUES ("Maria"); # вставка данных
+SELECT * FROM users
+ORDER by first_name; - Вывести все данные из таблицы
+
+SELECT u.last_name, COUNT(*) as tour_amt FROM users u
+JOIN users_tours ut ON
+ut.users_user_id = u.user_id
+GROUP BY u.user_id
+HAVING u.user_id = 4; #количество туров у пользователя
+
+SELECT u.last_name, COUNT(*) as tour_amt FROM users u
+JOIN users_tours ut ON
+ut.users_user_id = u.user_id
+GROUP BY u.user_id
+HAVING tour_amt >2; #Пользователи которые заказали больше двух туров
+
+SELECT users.user_id, users.last_name,  users_tours.tours_tour_id
+FROM users 
+JOIN users_tours
+ON users.user_id = users_tours.users_user_id WHERE users.last_name = 'Lord';
+
+
+
